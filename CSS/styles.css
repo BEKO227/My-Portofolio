@@ -1,0 +1,349 @@
+*{
+  
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+}
+h1{
+    text-align: center;
+    margin-top: 10px;
+    padding-top:90px ;
+    font-weight: 800;
+}
+
+/*---------------------------------navbar---------------------------------*/
+.navbar{
+    background: rgba(0, 0, 0, 0.7) ;
+    z-index: 1000;
+    position: fixed;
+    width: 100%;
+    color: black;
+}
+.nav-underline .nav-link {
+  color: white;
+}
+.navbar-brand{
+    font-weight: 800;
+    color: gold;
+}
+.navbar-brand:hover{
+  color: white;
+  transform: scale(1.5);
+  transition: 0.4s ease-in-out;
+}
+.nav-item{
+    margin-inline: auto;
+    color: black;
+}
+.nav-link{
+    color: white;
+}
+.nav-link:hover{
+    color: gold;
+}
+.nav-underline .nav-link.active{
+    color: gold;
+    text-decoration: none;
+}
+
+/*---------------------------------Home---------------------------------*/
+.homeimg{
+    height: 100vh;
+    width: 100%;
+    background-image: url(../imgs/Hashish.png);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    font-weight: 600;
+}
+.homelayer{
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+  }
+.hometext{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: gold;
+    text-align: center;
+    h1{
+      font-weight: 600;
+      font-size: 80px;
+    }
+    P{
+      font-size: 50px;
+      font-family: "Pacifico", cursive;
+      span{
+        font-size: 50px;
+        font-family: "Pacifico", cursive;
+      }
+    }
+    p::after{
+      content: "|";
+      animation: typing  10s infinite;
+      font-family: "Pacifico", cursive;
+
+
+    }
+    .icons{
+        position: relative;
+        background-color: rgba(0, 0, 0, 0.3);
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        margin: auto;
+        display: inline-block;
+        .icon{
+            text-decoration: none;
+            color: white;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 14px;
+            cursor: pointer
+        }
+        .icon:hover {
+          color: gold; /* or a brand color */
+          transform: scale(1.5);
+          transition: 0.4s ease-in-out;
+        }
+    }
+}
+@keyframes typing {
+  0%   { content: "Y|"; }
+  2.5% { content: "Yo"; }
+  5%   { content: "You|"; }
+  7.5% { content: "Yous"; }
+  10%  { content: "Youss|"; }
+  12.5% { content: "Yousse"; }
+  15%  { content: "Youssef|"; }
+  17.5% { content: "Youssef "; }
+  20%  { content: "Youssef H|"; }
+  22.5% { content: "Youssef Ha"; }
+  25%  { content: "Youssef Has|"; }
+  27.5% { content: "Youssef Hash"; }
+  30%  { content: "Youssef Hashi|"; }
+  32.5% { content: "Youssef Hashish"; }
+  35%   { content: "Youssef Hashish|"; }
+
+  37.5% { content: "Youssef Hashish"; }
+  40%   { content: "Youssef Hashis|"; }
+  42.5% { content: "Youssef Hashi"; }
+  45%   { content: "Youssef Hash|"; }
+  47.5% { content: "Youssef Has"; }
+  50%   { content: "Youssef Ha|"; }
+  52.5% { content: "Youssef H"; }
+  55%   { content: "Youssef|"; }
+  57.5% { content: "Yousse|"; }
+  60%   { content: "Youss"; }
+  62.5% { content: "Yous|"; }
+  65%   { content: "You"; }
+  67.5% { content: "Yo|"; }
+  70%   { content: "Y|"; }
+  72.5% { content: "|"; }
+  75%   { content: ""; }
+  76%   { content: "a"; }
+  77.5% { content: "a D|"; }
+  80%   { content: "a De"; }
+  82.5% { content: "a Dev|"; }
+  85%   { content: "a Deve"; }
+  87.5% { content: "a Devel|"; }
+  90%   { content: "a Develo"; }
+  92.5% { content: "a Develop|"; }
+  95%   { content: "a Develope"; }
+  97.5% { content: "a Developer|"; }
+  100%  { content: "a Developer"; }
+}
+/*.......................................About Me.....................................*/
+.About{
+  background-color: black;
+  .section-about {
+    background-image: url(../imgs/projectsbg.jpg);
+    background-attachment: fixed; 
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+    clip-path: inset(0 0 0 0);
+  }
+  
+  .overlay-mf {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(10, 10, 10, 0.7);
+  }
+  .card{
+    color: white;
+    background-color:  rgba(10, 10, 10, 0.1);;
+    border: 2px solid gold;
+    border-radius: 10px;
+    box-shadow: 100px;
+    .profileimg{
+      border: 2px solid gold;
+      border-radius: 10px;
+      transition:0.5s ease-in-out ;
+    }
+    .profileimg:hover{
+      scale: 1.1;
+
+    }
+  .card-title{
+    font-family: "Pacifico", cursive;
+    color: gold;
+  }
+  .card-text{
+    width: 85%;
+  }
+  .icon{
+    color: black;
+  }
+  }
+  .skills{
+    font-size: 17px;
+  }
+}
+/*.......................................Experience..................*/
+#Experience{
+  background-color: black;
+  font-family: "Pacifico", cursive;
+  background-color: black;
+  header{
+    display: flex;
+    position: relative;
+    text-align: center;
+    justify-content: center;
+    h1{
+      color: gold;
+      font-weight: bold;
+      position: absolute;
+      bottom: 0%;
+    }
+  }
+  .itemexp{
+    height: 400;
+    width: 360px;
+    position: relative;
+    img{
+
+      width:100%;
+      height: 372px;
+      position: relative;
+    }
+    h4{
+      color: gold;
+    }
+    .layerexp{
+      border: 4px solid gold;
+      display: flex;
+      justify-content: center;
+      width: 95%;
+      height: 95%;
+      top: 1%;
+      left: 2.5%;
+      opacity: 0;
+      background-color: rgba(255, 255, 255, 0.95);
+      position: absolute;
+      z-index: 1;
+      text-align: center;
+      margin: auto;
+      opacity: 0;
+      transition: 0.5s;
+      transform: rotateY(180deg) scale(0.5, 0.5)
+    }
+    span{
+      font-family: "Montserrat", sans-serif;
+    }
+  }
+  .itemexp:hover{
+    .layerexp{
+      opacity: 1;
+      transform: rotateY(0) scale(1, 1)
+    }
+    img{
+      scale: 1.5;
+      transition: 0.5s;
+      border-radius: 10px;
+    }
+  }
+}
+/*.......................................Projects..................*/
+.Projects{
+  background-color: black;
+  .section-projects {
+    background-image: url(../imgs/bg1.jpg);
+    background-attachment: fixed; 
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+    clip-path: inset(0 0 40% 0);
+  }
+  .overlay-mf {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60%;
+    background-color: rgba(10, 10, 10, 0.7);
+  }
+  h1{
+    color: gold;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: "Pacifico", cursive;
+  }
+  p{
+    text-align: center;
+    margin-top: 40px;
+    font-size: 30px;
+    color: white;
+  }
+}
+.work{
+   margin-top: -250px;
+   .card{
+    .imgcontainer{
+      border-radius: 10px;
+      height: 300px;
+      overflow: auto;    
+    }
+    .imgcontainer2{
+      height: 300px;
+      overflow: hidden;
+      border-radius: 10px;
+      img{
+        position: relative;
+        bottom: 50px;
+      }
+     }
+   }
+   .card-title{
+    color: gold;
+    font-family: "Pacifico", cursive;
+   }
+}
+/*.......................................Contact..................*/
+.Contact{
+  background-color: black;
+  h1{
+    color: gold;
+    font-family: "Pacifico", cursive; 
+  }
+  .btn-outline{
+    border: 1px solid gold;
+    color: gold;
+  }
+  .btn-outline:hover{
+    background-color: gold;
+  }
+}
