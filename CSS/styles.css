@@ -340,10 +340,6 @@ h1{
     font-family: "Pacifico", cursive; 
   }
   .btn-outline{
-    border: 1px solid gold;
-    color: gold;
-  }
-  .btn-outline:hover{
     background-color: gold;
     color: black;
   }
